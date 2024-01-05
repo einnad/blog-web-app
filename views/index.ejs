@@ -1,3 +1,8 @@
-<%- include('header.ejs')%>
+<%- include('partials/header.ejs')%>
 
-<%- include('footer.ejs') %>
+<form action="/submit" method="POST">
+    <input type="text" name="content">
+    <input type="submit" name="confirm">
+</form>
+
+<%- include('partials/footer.ejs') %>
