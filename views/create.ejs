@@ -1,4 +1,7 @@
 <%- include("partials/header.ejs") %>
 <h1>Give us your best words</h1>
-
+<form action="/submit" method="POST">
+    <input type="text" name="content">
+    <input type="submit" name="confirm">
+</form>
 <%- include('partials/footer.ejs') %>

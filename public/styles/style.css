@@ -1,4 +1,54 @@
 body {
     background-color: #3f3f3f;
     color: white;
+    padding: 0;
+    margin: 0;
+}
+
+footer, header {
+    background-color: #282828;
+    margin: 0;
+    padding: 20px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+.head {
+    display: flex;
+    gap: 20px;
+
+}
+
+footer {
+    text-align: center;
+}
+
+.labels {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 100px;
+    padding: 0px 100px 100px 100px;
+}
+
+.text-box {
+    background-color: #282828;
+    padding: 20px;
 }

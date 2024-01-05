@@ -14,10 +14,10 @@ app.get("/", (req, res) => {
   res.render("index.ejs");
 });
 
-app.get('/create', (req,res) => {
-  res.render('create.ejs');
+app.get('/create', (req, res) => {
+  res.render("create.ejs");
 });
 
-app.get('/explore', (req,res) => {
-  res.render('explore.ejs');
+app.get('/explore', (req, res) => {
+  res.render("explore.ejs");
 });
