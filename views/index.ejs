@@ -11,7 +11,13 @@
         <h3>Blog Title</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet lacinia elit at convallis. Quisque viverra arcu id vulputate sollicitudin. Nulla commodo ipsum vel metus euismod eleifend in quis risus. Suspendisse felis ex, eleifend vel rutrum eu, eleifend a erat. Nunc ac nibh vel leo dapibus hendrerit vitae ac sem. In a felis scelerisque, faucibus erat eu, cursus lacus. Ut id laoreet lacus, eu blandit eros. Nam at dui vestibulum, congue purus eu, ultricies lorem. Aenean malesuada augue nisi, ac sagittis enim sodales non. Etiam augue sapien, imperdiet non tellus tincidunt, dignissim lacinia diam. Quisque elementum hendrerit massa, et luctus diam pulvinar ac.</p>
     </div>
-    <div class="text-box"></div>
+    <div class="text-box">
+        <% if(locals.post) { %>
+        <p><%= post %></p>
+       <% } else { %>
+        <p>nothing here</p>
+        <% } %>
+    </div>
     <div class="text-box">
         <h3>Blog Title</h3>
 
