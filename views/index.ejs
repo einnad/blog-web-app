@@ -1,38 +1,43 @@
 <%- include('partials/header.ejs')%>
 
+<h1>Reliable Reviews</h1>
+
+<div class="intro">
+    <p>We think that these are the best reviews you'll read. But we'll let you be the judge of that.</p>
+</div>
+
 <div class="labels">
     <h2>Popular posts</h2>
     <h2>Recent posts</h2>
 </div>
 
 <div class="wrapper">
- <div class="container">
-    <div class="text-box">
-        <h3>Blog Title</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet lacinia elit at convallis. Quisque viverra arcu id vulputate sollicitudin. Nulla commodo ipsum vel metus euismod eleifend in quis risus. Suspendisse felis ex, eleifend vel rutrum eu, eleifend a erat. Nunc ac nibh vel leo dapibus hendrerit vitae ac sem. In a felis scelerisque, faucibus erat eu, cursus lacus. Ut id laoreet lacus, eu blandit eros. Nam at dui vestibulum, congue purus eu, ultricies lorem. Aenean malesuada augue nisi, ac sagittis enim sodales non. Etiam augue sapien, imperdiet non tellus tincidunt, dignissim lacinia diam. Quisque elementum hendrerit massa, et luctus diam pulvinar ac.</p>
+    <div class="container-pop">
+        <div class="text-box">
+            <h3>Review</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet lacinia elit at convallis. Quisque viverra arcu id vulputate sollicitudin. Nulla commodo ipsum vel metus euismod eleifend in quis risus.</p>
+        </div>
+        <div class="text-box">
+            <h3>Review</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet lacinia elit at convallis. Quisque viverra arcu id vulputate sollicitudin. Nulla commodo ipsum vel metus euismod eleifend in quis risus.</p>
+        </div>
+        <div class="text-box">
+            <h3>Review</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet lacinia elit at convallis. Quisque viverra arcu id vulputate sollicitudin. Nulla commodo ipsum vel metus euismod eleifend in quis risus.</p>
+        </div>
     </div>
-    <div class="text-box">
-        <% if(locals.post) { %>
-        <p><%= post %></p>
-       <% } else { %>
-        <p>nothing here</p>
-        <% } %>
-    </div>
-    <div class="text-box">
-        <h3>Blog Title</h3>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet lacinia elit at convallis. Quisque viverra arcu id vulputate sollicitudin. Nulla commodo ipsum vel metus euismod eleifend in quis risus. Suspendisse felis ex, eleifend vel rutrum eu, eleifend a erat. Nunc ac nibh vel leo dapibus hendrerit vitae ac sem. In a felis scelerisque, faucibus erat eu, cursus lacus. Ut id laoreet lacus, eu blandit eros. Nam at dui vestibulum, congue purus eu, ultricies lorem. Aenean malesuada augue nisi, ac sagittis enim sodales non. Etiam augue sapien, imperdiet non tellus tincidunt, dignissim lacinia diam. Quisque elementum hendrerit massa, et luctus diam pulvinar ac.</p>
-
+    <div class="container-rec">
+        <div class="text-box">
+            <% if(locals.post) { %>
+            <p><%= post %></p>
+            <% } else { %>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste possimus, cupiditate harum dolores labore dolor cum animi deleniti consectetur deserunt doloribus quasi quae illum eius sunt minima atque velit excepturi!e</p>
+            <% } %>
+        </div>
+        <div class="text-box"></div>
+        <div class="text-box"></div>
     </div>
-    <div class="text-box"></div>
-    <div class="text-box">
-        <h3>Blog Title</h3>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet lacinia elit at convallis. Quisque viverra arcu id vulputate sollicitudin. Nulla commodo ipsum vel metus euismod eleifend in quis risus. Suspendisse felis ex, eleifend vel rutrum eu, eleifend a erat. Nunc ac nibh vel leo dapibus hendrerit vitae ac sem. In a felis scelerisque, faucibus erat eu, cursus lacus. Ut id laoreet lacus, eu blandit eros. Nam at dui vestibulum, congue purus eu, ultricies lorem.
-        </p>
-    </div>
-    <div class="text-box"></div>
- </div>
 </div>
 
 <%- include('partials/footer.ejs') %>

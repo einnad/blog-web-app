@@ -1,31 +1,64 @@
-body {
-    background-color: #3f3f3f;
-    color: white;
-    padding: 0;
-    margin: 0;
+* {
+    box-sizing: border-box;
 }
 
-footer, header {
-    background-color: #282828;
+body {
+    color: #0B2447;
+    padding: 0;
     margin: 0;
-    padding: 20px;
-    
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+    padding: 50px;
+    padding-bottom: 0;
+}
+
+.navbar {
+    background-color: #A5D7E8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blogname {
+    font-weight: 900;
+    font-size: 36px;
+    padding: 10px;
+}
+
+.tagline {
+    font-size: 16px;
+    padding: 10px;
+    font-weight: 400;
+}
+
+.intro {
+    text-align: center;
+    padding: 50px;
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+.nav-links ul {
+    display: flex;
+}
+
+.nav-links li {
+    list-style: none;
+    display: block;
+    color: #0B2447;
+    padding: 10px;
+    padding-right: 30px;
 }
 
 a {
     text-decoration: none;
-    color: white;
     font-size: 24px;
-}
-
-.head {
-    display: flex;
-    gap: 20px;
-
-}
-
-footer {
-    text-align: center;
+    color: #0B2447;
+    
 }
 
 .labels {
@@ -36,23 +69,28 @@ footer {
 
 .wrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 100px;
+    margin-top: 0;
 }
 
-.container {
+.container-pop, .container-rec {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-    gap: 100px;
-    padding: 0px 100px 100px 100px;
+    flex-basis: 100%;
 }
 
 .text-box {
-    background-color: #282828;
     padding: 20px;
 }
 
 form {
     padding: 100px;
+}
+
+footer {
+    background-color: #A5D7E8;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
 }
