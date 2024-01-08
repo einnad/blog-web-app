@@ -16,11 +16,19 @@ h1 {
     padding-bottom: 0;
 }
 
+/* home */
+
 .navbar {
     background-color: #A5D7E8;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+@media(max-width: 500px) {
+    .navbar {
+        flex-direction: column;
+    }
 }
 
 .blogname {
