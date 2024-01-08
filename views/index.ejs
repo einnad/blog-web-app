@@ -8,13 +8,10 @@
     <p>We think that these are the best reviews you'll read. But we'll let you be the judge of that.</p>
 </div>
 
-<div class="labels">
-    <h2>Popular posts</h2>
-    <h2>Recent posts</h2>
-</div>
-
 <div class="wrapper">
     <div class="container-pop">
+        <div class="section-title"><h2>Popular posts</h2></div>
+
         <div class="text-box">
             <h3>Review</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet lacinia elit at convallis. Quisque viverra arcu id vulputate sollicitudin. Nulla commodo ipsum vel metus euismod eleifend in quis risus.</p>
@@ -30,6 +27,8 @@
     </div>
 
     <div class="container-rec">
+        <div class="section-title"><h2>Recent posts</h2></div>
+
         <div class="text-box">
             <% if(locals.title && locals.content) { %>
             <h3><%= title %></h3>

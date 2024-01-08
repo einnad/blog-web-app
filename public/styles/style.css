@@ -25,9 +25,22 @@ h1 {
     justify-content: space-between;
 }
 
-@media(max-width: 500px) {
+@media(max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .navbar {
         flex-direction: column;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .section-title {
+        background-color: #A5D7E8;
+        border-radius: 10px;
     }
 }
 
@@ -35,12 +48,6 @@ h1 {
     font-weight: 900;
     font-size: 36px;
     padding: 10px;
-}
-
-.tagline {
-    font-size: 16px;
-    padding: 10px;
-    font-weight: 400;
 }
 
 .intro {
@@ -69,23 +76,27 @@ a {
     
 }
 
-.labels {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 50px;
-}
-
 .wrapper {
     display: flex;
     margin: 100px;
     margin-top: 0;
+    gap: 10px;
 }
 
 .container-pop, .container-rec {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 20px, repeat(3, 1fr);
     flex-basis: 100%;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.section-title h2 {
+    background-color: #A5D7E8;
+    border-radius: 10px;
 }
 
 .text-box {
@@ -101,8 +112,8 @@ a {
 }
 
 .box {
-    height: 300px;
-    width: 500px;
+    height: 20vh;
+    width: 80%;
     border: solid #0B2447;
 }
 
