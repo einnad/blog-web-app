@@ -84,7 +84,25 @@ a {
     padding: 20px;
 }
 
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    padding-top: 0;
+}
+
+.box {
+    height: 300px;
+    width: 500px;
+    border: solid #0B2447;
+}
+
+/* create */
+
 form {
+    display: flex;
+    flex-direction: column;
     padding: 100px;
 }
 

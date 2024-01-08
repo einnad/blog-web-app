@@ -3,6 +3,8 @@
 <h1>Reliable Reviews</h1>
 
 <div class="intro">
+    <p>Ever wanted to read a review but not spoil the fun?</p>
+    <p>In just 100 words, these reviews can do just that.</p>
     <p>We think that these are the best reviews you'll read. But we'll let you be the judge of that.</p>
 </div>
 
@@ -29,15 +31,31 @@
 
     <div class="container-rec">
         <div class="text-box">
-            <% if(locals.post) { %>
-            <p><%= post %></p>
+            <% if(locals.title && locals.content) { %>
+            <h3><%= title %></h3>
+            <p><%= content %></p>
             <% } else { %>
+            <h3>Review</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste possimus, cupiditate harum dolores labore dolor cum animi deleniti consectetur deserunt doloribus quasi quae illum eius sunt minima atque velit excepturi!e</p>
             <% } %>
         </div>
-        <div class="text-box"></div>
-        <div class="text-box"></div>
+        <div class="text-box">
+            <h3>Review</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste possimus, cupiditate harum dolores labore dolor cum animi deleniti consectetur deserunt doloribus quasi quae illum eius sunt minima atque velit excepturi!e</p>
+        </div>
+        <div class="text-box">
+            <h3>Review</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste possimus, cupiditate harum dolores labore dolor cum animi deleniti consectetur deserunt doloribus quasi quae illum eius sunt minima atque velit excepturi!e</p>
+        </div>
     </div>
+</div>
+
+<!-- to make carousel below -->
+<div class="testimonials">
+    <h3 class="testimonial-tag">Take a look at some people that have reviewed our review site</h3>
+    <div class="box"></div>
+    <!-- <div class="box"></div>
+    <div class="box"></div> -->
 </div>
 
 <%- include('partials/footer.ejs') %>

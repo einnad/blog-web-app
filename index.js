@@ -25,6 +25,7 @@ app.get("/explore", (req, res) => {
 });
 
 app.post('/submit', (req, res) => {
-  const blogPost = req.body["content"];
-  res.render("index", {post: blogPost});
+  const revTitle = req.body["title"];
+  const revContent = req.body["content"];
+  res.render("index", {content: revContent, title: revTitle});
 });
