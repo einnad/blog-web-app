@@ -1,6 +1,6 @@
 <%- include('partials/header.ejs')%>
 
-<h1>Reliable Reviews</h1>
+<h1>Rapid Reviews</h1>
 
 <div class="intro">
     <p>Ever wanted to read a review but not spoil the fun?</p>
@@ -14,14 +14,17 @@
 
         <div class="text-box">
             <h3>Review</h3>
+            <p>1/4/2023</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet lacinia elit at convallis. Quisque viverra arcu id vulputate sollicitudin. Nulla commodo ipsum vel metus euismod eleifend in quis risus.</p>
         </div>
         <div class="text-box">
             <h3>Review</h3>
+            <p>4/8/2023</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet lacinia elit at convallis. Quisque viverra arcu id vulputate sollicitudin. Nulla commodo ipsum vel metus euismod eleifend in quis risus.</p>
         </div>
         <div class="text-box">
             <h3>Review</h3>
+            <p>17/11/23</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet lacinia elit at convallis. Quisque viverra arcu id vulputate sollicitudin. Nulla commodo ipsum vel metus euismod eleifend in quis risus.</p>
         </div>
     </div>
@@ -32,18 +35,22 @@
         <div class="text-box">
             <% if(locals.title && locals.content) { %>
             <h3><%= title %></h3>
+            <p>Date</p>
             <p><%= content %></p>
             <% } else { %>
             <h3>Review</h3>
+            <p>25/9/2023</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste possimus, cupiditate harum dolores labore dolor cum animi deleniti consectetur deserunt doloribus quasi quae illum eius sunt minima atque velit excepturi!e</p>
             <% } %>
         </div>
         <div class="text-box">
             <h3>Review</h3>
+            <p>7/1/2024</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste possimus, cupiditate harum dolores labore dolor cum animi deleniti consectetur deserunt doloribus quasi quae illum eius sunt minima atque velit excepturi!e</p>
         </div>
         <div class="text-box">
             <h3>Review</h3>
+            <p>1/1/2024</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste possimus, cupiditate harum dolores labore dolor cum animi deleniti consectetur deserunt doloribus quasi quae illum eius sunt minima atque velit excepturi!e</p>
         </div>
     </div>
