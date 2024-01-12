@@ -29,3 +29,5 @@ app.post('/submit', (req, res) => {
   const revContent = req.body["content"];
   res.render("index", {content: revContent, title: revTitle});
 });
+
+// Create array of posts for each column, loop over to display(API rel)

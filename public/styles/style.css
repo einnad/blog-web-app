@@ -33,6 +33,10 @@ h1 {
         overflow-x: hidden;
     }
 
+    h1 {
+        margin-top: 100px;
+    }
+
     .navbar {
         flex-direction: column;
     }
@@ -129,7 +133,11 @@ form {
 
 footer {
     background-color: #A5D7E8;
-    margin: 0;
+    /* margin: 0; */
     padding: 20px;
     text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
 }
