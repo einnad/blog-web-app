@@ -3,16 +3,20 @@
 <h1>You have 100 words...go!</h1>
 
 <form action="/submit" method="POST">
-    <p><label for="title-input">Enter title below:</label></p>
+  <p><label for="title-input">Enter title below:</label></p>
 
-    <textarea name="title" cols="50" rows="1"></textarea>
+  <textarea name="title" cols="50" rows="1"></textarea>
 
-    <p><label for="blog-input">Enter review below:</label></p>
+  <p><label for="blog-input">Enter review below:</label></p>
 
-    <textarea name="content" cols="50" rows="20"></textarea>
-    
-    <input type="submit" name="confirm">
+  <textarea name="content" cols="50" rows="20"></textarea>
+
+  <input
+    type="submit"
+    name="confirm"
+    value="Submit review"
+    class="submit-rev-button"
+  />
 </form>
-
 
 <%- include('partials/footer.ejs') %>
